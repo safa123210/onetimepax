@@ -1,6 +1,7 @@
 package org.dador;
 
-/**
+/** Seifeddine BORJI
+ * Safa MTAR
  *
  */
 public class MultiTimePad {
