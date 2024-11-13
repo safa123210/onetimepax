@@ -48,11 +48,20 @@ public class MultiTimePad {
 
         key = new byte[msg1.length() / 2];
         // TODO: renseigner les valeurs de la clé..
-        key[0] = 0 ;
+        key[0] = (byte) 0x9a;
         key[1] = 0x50;
         key[2]= (byte) 0xcc;
-        key[3] = 0x20;
-        key[4] = (byte)0x2f;
+        key[3] = (byte) 0x9f ^0x20;
+        key[4] = (byte)0xff;
+        key[5] = (byte) 0xfc;
+        key[6] = (byte) 0xfd ^0x73;
+        key[7] = (byte) 0xdb ^0x20;
+        key[9] = (byte) 0x86 ^0x20;
+        key[11] = (byte) 0x41 ^0x20;
+        key[12] = (byte) 0xc0 ^0x20;
+
+
+
 
 
 
